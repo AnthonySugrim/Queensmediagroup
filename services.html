@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Queens Media Group</title>
+    <meta name="description" content="Queens Media Group offers affordable website design, SEO, and Google Ads management services for small businesses in Queens, NY. Get a custom website for just $1000 for 4 years.">
+    
+    <!-- Favicon (placeholder) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Services Page Specific Styles */
+        .page-header {
+            background: linear-gradient(rgba(14, 26, 62, 0.8), rgba(14, 26, 62, 0.8)), url('images/queens-services.jpg') no-repeat center center/cover;
+            padding: 150px 0 80px;
+            text-align: center;
+            color: var(--light-text);
+        }
+        
+        .page-header h1 {
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+        
+        .services-section {
+            padding: var(--section-padding);
+        }
+        
+        .service-block {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .service-block:last-child {
+            border-bottom: none;
+        }
+        
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .service-content.image-right {
+            direction: rtl;
+        }
+        
+        .service-content.image-right .service-text {
+            direction: ltr;
+        }
+        
+        .service-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .service-text h2 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .service-text h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .service-text p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .service-features {
+            margin: 30px 0;
+        }
+        
+        .service-features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .service-features li i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .service-cta {
+            margin-top: 30px;
+        }
+        
+        .pricing-box {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .pricing-box h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .pricing-box .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        .pricing-box .price span {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .pricing-box p {
+            margin-bottom: 0;
+        }
+        
+        @media (max-width: 992px) {
+            .service-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .service-content.image-right {
+                direction: ltr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Queens Media Group Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cta-button">
+                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Affordable digital solutions for small businesses in Queens</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <!-- Website Design Service -->
+            <div id="web-design" class="service-block">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2>Custom Website Design</h2>
+                        <p>At Queens Media Group, we create professional, mobile-friendly websites designed specifically for your business needs. Our websites are not only visually appealing but also optimized for performance and conversions.</p>
+                        <p>Whether you're starting from scratch or need a redesign, our team will work closely with you to create a website that represents your brand and helps you achieve your business goals.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Custom design tailored to your brand</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile-responsive layout for all devices</li>
+                            <li><i class="fas fa-check-circle"></i> User-friendly navigation and interface</li>
+                            <li><i class="fas fa-check-circle"></i> Contact forms and lead generation tools</li>
+                            <li><i class="fas fa-check-circle"></i> Social media integration</li>
+                            <li><i class="fas fa-check-circle"></i> Google Maps and business information</li>
+                        </ul>
+                        <div class="pricing-box">
+                            <h3>Website Package</h3>
+                            <div class="price">$1000 <span>for 4 years</span></div>
+                            <p>One-time fee includes design, development, hosting, domain, and basic SEO optimization.</p>
+                        </div>
+                        <div class="service-cta">
+                            <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/web-design.jpg" alt="Custom Website Design">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Service -->
+            <div id="seo" class="service-block">
+                <div class="service-content image-right">
+                    <div class="service-text">
+                        <h2>Search Engine Optimization (SEO)</h2>
+                        <p>Get found by local customers with our targeted SEO services. We optimize your website to rank higher in search results, driving more organic traffic and potential customers to your business.</p>
+                        <p>Our SEO strategies are focused on local search, helping small businesses in Queens connect with customers in their area who are actively searching for their products or services.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Keyword research and optimization</li>
+                            <li><i class="fas fa-check-circle"></i> On-page SEO implementation</li>
+                            <li><i class="fas fa-check-circle"></i> Local SEO and Google My Business optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Content optimization for search engines</li>
+                            <li><i class="fas fa-check-circle"></i> Technical SEO improvements</li>
+                            <li><i class="fas fa-check-circle"></i> Regular performance reporting</li>
+                        </ul>
+                        <div class="pricing-box">
+                            <h3>SEO Services</h3>
+                            <p>Custom pricing based on your business needs and goals. Contact us for a personalized quote.</p>
+                        </div>
+                        <div class="service-cta">
+                            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/seo.jpg" alt="Search Engine Optimization">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Ads Service -->
+            <div id="google-ads" class="service-block">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2>Google Ads Management</h2>
+                        <p>Drive targeted traffic to your website with expertly managed Google Ads campaigns. Our team creates and optimizes paid search campaigns that deliver real results for your business.</p>
+                        <p>We focus on maximizing your return on investment by targeting the right keywords, creating compelling ad copy, and continuously optimizing your campaigns for better performance.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Campaign strategy and setup</li>
+                            <li><i class="fas fa-check-circle"></i> Keyword research and selection</li>
+                            <li><i class="fas fa-check-circle"></i> Ad copywriting and creation</li>
+                            <li><i class="fas fa-check-circle"></i> Landing page optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Bid management and budget optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Performance tracking and reporting</li>
+                        </ul>
+                        <div class="pricing-box">
+                            <h3>Google Ads Management</h3>
+                            <p>Custom pricing based on your advertising budget and campaign requirements. Contact us for a personalized quote.</p>
+                        </div>
+                        <div class="service-cta">
+                            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/google-ads.jpg" alt="Google Ads Management">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Website Maintenance Service -->
+            <div id="maintenance" class="service-block">
+                <div class="service-content image-right">
+                    <div class="service-text">
+                        <h2>Website Maintenance</h2>
+                        <p>Keep your website running smoothly with our comprehensive maintenance services. We handle all the technical aspects of your website so you can focus on running your business.</p>
+                        <p>Our maintenance services are included in your website package for the full 4-year term, ensuring your site remains secure, up-to-date, and performing at its best.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Regular software updates</li>
+                            <li><i class="fas fa-check-circle"></i> Security monitoring and protection</li>
+                            <li><i class="fas fa-check-circle"></i> Performance optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Content updates and changes</li>
+                            <li><i class="fas fa-check-circle"></i> Technical support and troubleshooting</li>
+                            <li><i class="fas fa-check-circle"></i> Regular backups and disaster recovery</li>
+                        </ul>
+                        <div class="pricing-box">
+                            <h3>Website Maintenance</h3>
+                            <p>Included in your website package for the full 4-year term at no additional cost.</p>
+                        </div>
+                        <div class="service-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/maintenance.jpg" alt="Website Maintenance">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Grow Your Business Online?</h2>
+                <p>Get a professional website and start attracting more customers today.</p>
+                <a href="contact.html" class="btn btn-large">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="Queens Media Group Logo">
+                    <p>We help small businesses in Queens establish a strong online presence with affordable, effective digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Website Design</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                        <li><a href="services.html#google-ads">Google Ads</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:anthonys@queensmediagroup.com">anthonys@queensmediagroup.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+17185551234">(718) 555-1234</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Queens, New York</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Queens Media Group. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
