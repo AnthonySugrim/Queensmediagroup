@@ -4,7 +4,7 @@ A professional website for Queens Media Group, a web design and digital marketin
 
 ## Overview
 
-This website was created based on the Digital Silk website design, adapted for Queens Media Group's specific services and target audience. The site is designed to be fully responsive, SEO-optimized, and includes a built-in lead generation funnel.
+Queens Media Group's specific services and target audience. The site is designed to be fully responsive, SEO-optimized, and includes a built-in lead generation funnel.
 
 ## Features
 
